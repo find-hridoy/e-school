@@ -1,6 +1,13 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+::-moz-selection {
+    background: #99C1DA;
+  }
+  
+  ::selection {
+    background: #99C1DA;
+  }
 /* =========== Header Section ==========*/
 header{
     background: #f0fff0;
@@ -14,6 +21,10 @@ header{
     margin-right: 12px;
     font-size: 16px;
     color: black !important;
+    transition: transform ease-in-out 0.3s;
+}
+.nav-link:hover{
+    transform: translateY(-2px);
 }
 .btn-default{
     border: none;
@@ -38,7 +49,8 @@ header{
     padding: 40px 10px;
 }
 .banner-image img{
-    width: 450px;
+    width: 90%;
+    margin-top: 10px;
 }
 .banner h6{
     color: #fd511a;
@@ -66,21 +78,27 @@ header{
     background: #F8FFFB;
     border-radius: 10px;
     text-align: center;
-    align-items: center;
     height: 240px;
     padding: 30px 0;
+    cursor: pointer;
+    margin-bottom: 30px;
     transition: box-shadow ease-in-out 0.3s;
 }
 .books-content:hover{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
-.books-content img{
+.books-image{
+    height: 80px;
+}
+.books-image img{
     width: 70px;
 }
 .books-content h3{
     font-size: 24px;
     padding-top: 25px;
     color: #413960;
+    font-weight: 500;
 }
 .books-content p{
     font-size: 16px;
@@ -100,10 +118,11 @@ header{
     border: none;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
     border-radius: 18px;
+    padding: 10px 0;
 }
 .card img{
     margin: auto;
-    width: 310px;
+    width: 90%;
 }
 .card .card-title{
     font-weight: 500;
@@ -116,6 +135,7 @@ header{
 .date-info .card-text{
     font-weight: 500;
     color: #585859;
+    font-size: 15px;
 }
 .card-text img{
     width: 20px;
@@ -142,15 +162,19 @@ header{
     padding: 60px 0;
     background: rgba(211, 211, 211, 0.089);
 }
+.address h3{
+    font-weight: 500;
+    font-size: 36px;
+}
 .address li, a{
     list-style: none;
     color: lightslategray;
+    line-height: 2;
 }
 .contact-block input, .contact-block textarea{
     border-radius: 0;
     font-size: 13px;
     text-transform: uppercase;
-    color: rgba(211, 211, 211, 0.514);
     padding: 22px 15px;
     letter-spacing: 2px;
     background: transparent;
@@ -170,3 +194,34 @@ header{
     font-size: 13px;
     padding: 12px 0;
 }
+/* =========== Others Section ==========*/
+.others{
+    background: #282531;
+    padding: 50px 0 0;
+}
+.others-text p{
+    color: #fff;
+}
+.others-link ul li a{
+    color: #fff;
+    font-weight: normal;
+}
+.link-title{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    list-style: none;
+}
+/* Footer */
+footer {
+    padding: 70px 0 20px;
+    text-align: center;
+}
+footer p{
+    color: #CDCDCD;
+}
+footer h6{
+    color: #CDCDCD;
+    font-size: 14px;
+}
+/* =========== Completed ==========*/
